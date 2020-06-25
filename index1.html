@@ -430,11 +430,11 @@
 
     <p> Address: <input type="text" size=65 name="Address">  </p><br> 
 
-    <p>E-mail Address: <input type="text" size=65 name="EMail">  </p><br> 
+    <p>E-mail Address: <input type="text" size=65 name="email">  </p><br> 
 
      <p>Password: <input type="text" size=65 name="Password"> </p><br> 
 
-    <p>Telephone: <input type="text" size=65 name="Telephone"> </p><br>   
+    <p>Cellphone: <input type="text" size=65 name="Cellphone"> </p><br>   
 
            
 
@@ -481,23 +481,19 @@
 
 <script> 
 
-function GEEKFORGEEKS()                                    
+function VALIDATION()                                                                 
 
 { 
+    var name = document.forms["personalForm"]["Name"];               
 
-    var name = document.forms["RegForm"]["Name"];               
+    var email = document.forms["personalForm"]["email"];    
 
-    var email = document.forms["RegForm"]["EMail"];    
+    var phone = document.forms["personalForm"]["cellphone number"]; 
 
-    var phone = document.forms["RegForm"]["Telephone"];  
+    var password = document.forms["personalForm"]["Password"];  
 
-    var what =  document.forms["RegForm"]["Subject"];  
+    var address = document.forms["personalForm"]["Address"];  
 
-    var password = document.forms["RegForm"]["Password"];  
-
-    var address = document.forms["RegForm"]["Address"];  
-
-   
 
     if (name.value == "")                                  
 
@@ -545,7 +541,7 @@ function GEEKFORGEEKS()                            �
 
     { 
 
-        window.alert("Please enter your telephone number."); 
+        window.alert("Please enter your cellphone number."); 
 
         phone.focus(); 
 
